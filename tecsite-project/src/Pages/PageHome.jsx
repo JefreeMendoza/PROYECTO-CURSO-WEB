@@ -1,3 +1,4 @@
+import TopBar from "../Components/TopBar";
 import NavBar from "../Components/NavBar";
 import Footer from "../Components/Footer";
 import '../Styles/PageHome.css';
@@ -6,19 +7,20 @@ import imgHero from '../img/Hero.png';
 import imgAboutUs from '../img/AboutUs.png';
 
 import imgWeb from '../img/web.png';
-import  imgPc from '../img/pc.png';
+import imgPc from '../img/pc.png';
 import imgIns from '../img/instalacion.png';
-import  imgDatos from '../img/datos.png';
+import imgDatos from '../img/datos.png';
 
-import  imgAir from '../img/airpods.jpg';
-import  imgMax from '../img/max.jpg';
+import imgAir from '../img/airpods.jpg';
+import imgMax from '../img/max.jpg';
 
 
 
 function PageHome() {
-    return (  
+    return (
         <>
-            <NavBar/>
+            <TopBar />
+            <NavBar />
             {/* <h1>
                 ESTAS EN LA PAGINA DEL HOME
             </h1> */}
@@ -26,18 +28,29 @@ function PageHome() {
             <div className='home-container'>
 
                 <section className='hero-section'>
-                    <img src={imgHero} alt='Hero' className='hero-image'/>
-                    <div className='hero-text'>
-                    <h1>Bienvenido a TecSite</h1>
-                    <p>Soluciones tecnológicas confiables y efectivas.</p>
-                    <button className='cta-button' onClick={'/PageContactanos'}>Contáctanos</button>
+                    <img src={imgHero} alt='Hero' className='hero-image' />
+                    <div className='hero-info'>
+                        <div className="hero-text">
+                            <h1>¡Bienvenido a TecSite! 🌐🔧</h1>
+                            <h4>Soluciones tecnológicas confiables y efectivas.</h4>
+                            <p>Ofrecemos desarrollo web, mantenimiento de PC y laptops, instalación de software, eliminación de virus, recuperación de archivos y venta de audífonos premium como AirPods Max y Pro. 💻🛠️🎧
+                                Nuestro equipo de expertos garantiza calidad y satisfacción.
+                                ¡Contáctanos y síguenos en redes sociales para más novedades! 📲🚀
+                            </p>
+                        </div>
+                        <div className="hero-buttons">
+                            <button className='cta-button' onClick={'/PageContactanos'}>Facebook</button>
+                            <button className='cta-button' onClick={'/PageContactanos'}>Instagram</button>
+                            <button className='cta-button' onClick={'/PageContactanos'}>Tiktok</button>
+                            <button className='cta-button' onClick={'/PageContactanos'}>WhatsApp</button>
+                        </div>
                     </div>
                 </section>
 
                 <section className='about-us'>
                     <h2>Sobre Nosotros</h2>
                     <p>En TecSite, nos dedicamos a hacer que la tecnología funcione a tu favor. Ofrecemos servicios de Desarrollo Web, Mantenimiento y Ensamblaje de PC y Laptops, Instalación de Sistemas Operativos y Programas, Recuperación de Archivos y Eliminación de Virus.</p>
-                    <img src={imgAboutUs} alt='About Us' className='about-image'/>
+                    <img src={imgAboutUs} alt='About Us' className='about-image' />
                 </section>
 
                 <section className='services'>
@@ -76,25 +89,25 @@ function PageHome() {
                     <div className='products-list'>
 
                         <div className='product-item'>
-                            <img src= {imgAir} alt='AirPods Max' />
+                            <img src={imgAir} alt='AirPods Max' />
                             <h3>AirPods Max</h3>
                             <p>Con almohadillas intercambiables y excelente sonido.</p>
                         </div>
 
                         <div className='product-item'>
-                            <img src= {imgMax} alt='AirPods Pro' />
+                            <img src={imgMax} alt='AirPods Pro' />
                             <h3>AirPods Pro 2da Gen</h3>
                             <p>Compatibles con iOS y Android, con búsqueda por GPS.</p>
                         </div>
-                        
+
                     </div>
-                    
+
 
                 </section>
             </div>
 
 
-            <Footer/>
+            <Footer />
         </>
     );
 }

@@ -2,9 +2,9 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import PageHome from '../Pages/PageHome'
+import PageAbout from '../Pages/PageAbout'
 import PageProductos from '../Pages/PageProductos'
-import PagePrecios from '../Pages/PagePrecios'
-import PageTendencias from '../Pages/PageTendencias'
+import PageServicios from '../Pages/PageServicios'
 import PageContactanos from '../Pages/PageContactanos'
 
 
@@ -20,18 +20,18 @@ function AppRouter() {
                 />
 
                 <Route
+                    exact path='/about'
+                    element= {<PageAbout/>}
+                />
+
+                <Route
                     exact path='/productos'
                     element= {<PageProductos/>}
                 />
 
                 <Route
-                    exact path='/precios'
-                    element= {<PagePrecios/>}
-                />
-
-                <Route
-                    exact path='/tendencias'
-                    element= {<PageTendencias/>}
+                    exact path='/servicios'
+                    element= {<PageServicios/>}
                 />
 
                 <Route

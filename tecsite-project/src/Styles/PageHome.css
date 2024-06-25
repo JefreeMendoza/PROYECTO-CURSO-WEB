@@ -20,11 +20,26 @@
     border-radius: 5px;
 }
 
-.hero-text {
-    width: 45%;
-    text-align: center;
+.hero-info{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
 }
 
+.hero-text {
+    text-align: center;
+    width: 80%;
+}
+
+.hero-buttons{
+    text-align: center;
+    padding:20px;
+}
+
+.hero-buttons button {
+    margin-inline: 5px;
+}
 .cta-button {
     padding: 10px 20px;
     background-color: #19427e;

@@ -1,0 +1,38 @@
+.container-topBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #19427e;
+    color: white;
+}
+
+
+.text-left, .text-rigth {
+    display: flex;
+    align-items: center;
+}
+
+.text-left small, .text-rigth small {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.inseccion {
+    padding: 0 20px ;    
+}
+
+
+.icons-rigth{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icons-rigth a li{
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    margin-inline: 4px;
+}

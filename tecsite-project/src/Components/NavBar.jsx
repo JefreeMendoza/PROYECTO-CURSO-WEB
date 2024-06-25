@@ -26,9 +26,9 @@ function NavBar() {
 
                     <ul className="navbar-links">
                         <li className='option-main'><Link to="/" className={getLinkClass('/')}>Inicio</Link></li>
-                        <li className='option-main'><Link to="/tendencias" className={getLinkClass('/PageTendencias')}>Tendencias</Link></li>
-                        <li className='option-main'><Link to="/productos" className={getLinkClass('/PageProductos')}>Nuestros Productos</Link></li>
-                        <li className='option-main'><Link to="/precios" className={getLinkClass('/PagePrecios')}>Planes de Precios</Link></li>
+                        <li className='option-main'><Link to="/about" className={getLinkClass('/PageAbout')}>Sobre Nosotros</Link></li>
+                        <li className='option-main'><Link to="/servicios" className={getLinkClass('/PageServicios')}>Servicios</Link></li>
+                        <li className='option-main'><Link to="/productos" className={getLinkClass('/PageProductos')}>Productos</Link></li>
                         <li className='option-main'><Link to="/contactanos" className={getLinkClass('/PageContactanos')}>Contactanos</Link></li>
                     </ul>
                 </nav>
