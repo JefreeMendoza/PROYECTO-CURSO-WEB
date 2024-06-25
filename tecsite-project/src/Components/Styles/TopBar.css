@@ -11,10 +11,12 @@
 .text-left, .text-rigth {
     display: flex;
     align-items: center;
+    margin-left: 8px;
+    margin-right: 8px;
 }
 
 .text-left small, .text-rigth small {
-    margin-right: 10px;
+    margin-right: 8px;
     display: flex;
     align-items: center;
 }
@@ -31,8 +33,27 @@
 }
 
 .icons-rigth a li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     color: white;
     list-style: none;
     text-decoration: none;
-    margin-inline: 4px;
+    margin-inline: 6px;
+}
+
+@media (max-width: 768px) {
+    .container-topBar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-left, .text-rigth {
+        justify-content: center;
+        margin: 5px 0;
+    }
+
+    .text-left small, .text-rigth small {
+        margin-right: 5px;
+    }
 }

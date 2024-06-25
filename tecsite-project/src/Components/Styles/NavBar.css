@@ -7,8 +7,16 @@
     /* border-radius: 15px; */
     background-color: #f0f0f0;
     padding: 20px;
-    
+    position: relative;
 }
+
+.hamburger-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #19427e;
+}
+
 
 .img-main {
     max-width: 80px;
@@ -40,4 +48,31 @@
     background-color: white;
     border-radius: 10px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+
+@media (max-width: 768px) {
+    .hamburger-icon {
+        display: block;
+    }
+
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #f0f0f0;
+        padding: 10px;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .navbar-links.open {
+        display: flex;
+    }
+
+    .navbar-links li {
+        margin: 10px 0;
+    }
 }

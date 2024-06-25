@@ -1,13 +1,19 @@
+import TopBar from "../Components/TopBar";
 import NavBar from "../Components/NavBar";
+import Footer from "../Components/Footer";
+
+import imgAir from '../img/airpods.jpg';
+import imgMax from '../img/max.jpg';
 
 function PageProductos() {
-    return (  
+    return (
         <>
-            <NavBar/>
-            
+            <TopBar />
+            <NavBar />
+
             <div class="container">
 
-                <div 
+                <div
                     id="nav-placeholder"
                 >
                 </div>
@@ -15,14 +21,27 @@ function PageProductos() {
                 <h1>
                     Estas en la seccion de PRODUCTOS
                 </h1>
-                <li> {/* DEBERIA SER BOTON */}
-                    <a  href="./PageHome">
-                        Regresar
-                    </a>        
-                </li>
-                
-            </div>
 
+                <section className='products'>
+                    <h2>Productos</h2>
+                    <div className='products-list'>
+
+                        <div className='product-item'>
+                            <img src={imgAir} alt='AirPods Max' />
+                            <h3>AirPods Max</h3>
+                            <p>Con almohadillas intercambiables y excelente sonido.</p>
+                        </div>
+
+                        <div className='product-item'>
+                            <img src={imgMax} alt='AirPods Pro' />
+                            <h3>AirPods Pro 2da Gen</h3>
+                            <p>Compatibles con iOS y Android, con búsqueda por GPS.</p>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+            <Footer />
         </>
     );
 }

@@ -1,4 +1,6 @@
+import TopBar from "../Components/TopBar";
 import NavBar from "../Components/NavBar";
+import Footer from "../Components/Footer";
 import React, { useState } from 'react';
 import '../Styles/PageContacto.css';
 
@@ -25,40 +27,41 @@ const PageContactanos = () => {
             message: ''
         });
     };
-    return (  
+    return (
         <>
-            <NavBar/>
+            <TopBar />
+            <NavBar />
 
             <div className="contact">
-            <h2>Contáctanos</h2>
-            <form className="contact-form" onSubmit={handleSubmit}>
-                <input
-                    type="text"
-                    name="name"
-                    placeholder="Tu Nombre"
-                    value={formData.name}
-                    onChange={handleChange}
-                    required
-                />
-                <input
-                    type="email"
-                    name="email"
-                    placeholder="Tu Correo Electrónico"
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
-                />
-                <textarea
-                    name="message"
-                    placeholder="Tu Mensaje"
-                    value={formData.message}
-                    onChange={handleChange}
-                    required
-                ></textarea>
-                <button type="submit">Enviar</button>
-            </form>
-        </div>
-
+                <h2>Contáctanos</h2>
+                <form className="contact-form" onSubmit={handleSubmit}>
+                    <input
+                        type="text"
+                        name="name"
+                        placeholder="Tu Nombre"
+                        value={formData.name}
+                        onChange={handleChange}
+                        required
+                    />
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="Tu Correo Electrónico"
+                        value={formData.email}
+                        onChange={handleChange}
+                        required
+                    />
+                    <textarea
+                        name="message"
+                        placeholder="Tu Mensaje"
+                        value={formData.message}
+                        onChange={handleChange}
+                        required
+                    ></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+            <Footer />
         </>
     );
 }
