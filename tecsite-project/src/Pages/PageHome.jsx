@@ -99,13 +99,11 @@ function PageHome() {
                             <h3>AirPods Pro 2da Gen</h3>
                             <p>Compatibles con iOS y Android, con búsqueda por GPS.</p>
                         </div>
-
                     </div>
-
-
                 </section>
-            </div>
 
+
+            </div>
 
             <Footer />
         </>
